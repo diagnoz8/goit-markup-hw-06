@@ -243,12 +243,11 @@ display: inline-block;
         gap: 16px;
 }
 
-/* .ft-description{
+ .ft-description{
         margin-right: 120px;
-} */
+} 
 .ft-properties .container{
         display: flex;
-        gap: 120px;
         align-items: baseline;
 }
 .footer-text {
@@ -256,6 +255,9 @@ display: inline-block;
         color: var(--light);
         letter-spacing: 0.02em;
         width: 264px;
+}
+.social-media{
+        margin-right: 80px;
 }
 .social-media .hthird-text{
         margin-bottom: 16px;
@@ -278,11 +280,17 @@ display: inline-block;
                 padding: 8px 24px;
                 gap: 16px;
 
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.04em;
+                line-height: 1.5;
+
         min-width: 165px;
         border-radius: 4px;
         height: 40px;
         color: var(--white-background);
         background-color: var(--primary-brand);
+        border: none;
 }
 .subscribe-input {
         display: flex;
@@ -299,6 +307,10 @@ display: inline-block;
 }
 .subscribe-input::placeholder{
         color: var(--white-background);
+        font-weight: 400;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
 }
 /* /FOOTER */
 
@@ -317,6 +329,7 @@ display: inline-block;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .modal{
         position: absolute;
+        box-sizing: border-box;
         top: calc(50% );
         left: calc(50% );
         transform: translate(-50%, -50%);
@@ -333,7 +346,8 @@ display: inline-block;
 }
 .modal-btn{ 
         position: absolute;
-        right: 31px;
+        right: 24px;
+        top: 24px;
         display: flex;
         margin-left: auto;
 
@@ -383,7 +397,6 @@ display: inline-block;
 .modal-inputs {
         display: flex;
         flex-direction: column;
-        margin-bottom: 16px;
 }
 .modal-input{
         width: 360px;
@@ -417,6 +430,9 @@ display: inline-block;
          gap: 4px;
         margin-bottom: 8px;
 }
+.modal-label-comment{
+        margin-bottom: 16px;
+}
 .input-label-txt{
         display: block;
         margin-bottom: 4px;
@@ -432,6 +448,7 @@ display: inline-block;
 }
 .modal-field{
         position: relative;
+        margin-bottom: 8px;
 }
 .send-btm {
         display: block;
@@ -484,14 +501,16 @@ fill: var(--dark);
         align-items: center;
         gap: 8px;
         margin-bottom: 24px;
-        justify-content: center;
 
 }
 .privacy-policy-link{
         color: var(--primary-brand);
 }
-.privacy-policy-link
-.privacy-policy-link
+.privacy-policy-link:hover,
+.privacy-policy-link:focus{
+        color: var(--pressed-state);
+        transition: var(--anim-slow);
+}
 
 .comment-label{
         margin-bottom: 24px;
@@ -516,7 +535,7 @@ fill: var(--dark);
 .privacy-input-icon{
         position: absolute;
         top: 0;
-        left: 10px;
+        left: 0px;
 }
 .privacy-input-icon-unchecked{
         opacity: 1;
@@ -552,7 +571,6 @@ fill: var(--dark);
         padding-left: 16px;
         padding-right: 16px;
 
-        
         border: 1px solid var(--modal-overlay);
         border-radius: 4px;
         
