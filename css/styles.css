@@ -419,7 +419,7 @@ display: inline-block;
 }
 
 .modal-input:hover + .label-icon,
-.modal-input:focus +.label-icon{
+.modal-input:focus + .label-icon{
         fill: var(--primary-brand);
 }
 
